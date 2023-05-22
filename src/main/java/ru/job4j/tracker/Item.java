@@ -13,6 +13,10 @@ public class Item {
         this.id = id;
     }
 
+    public Item() {
+
+    }
+
     public int getId() {
         return id;
     }
