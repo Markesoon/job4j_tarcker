@@ -1,5 +1,7 @@
 package ru.job4j.pojo;
 
+import java.util.Arrays;
+
 public class Library {
     public static void main(String[] args) {
         Book code = new Book("Clean code", 10);
@@ -22,5 +24,12 @@ public class Library {
             Book pr = prods[index];
             System.out.println(pr.getName() + " - " + pr.getCount());
         }
+        System.out.println("book name Clean code");
+        for (int index = 0; index < prods.length; index++) {
+            Book pr = prods[index];
+            if (prods[index] == prods[3]) {
+                System.out.println(pr.getName() + " - " + pr.getCount());
+            }
+            }
+        }
     }
-}
