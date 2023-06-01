@@ -27,9 +27,9 @@ public class Library {
         System.out.println("book name Clean code");
         for (int index = 0; index < prods.length; index++) {
             Book pr = prods[index];
-            if (prods[index] == prods[3]) {
+            if ("Clean code".equals(prods[index].getName())) {
                 System.out.println(pr.getName() + " - " + pr.getCount());
-            }
             }
         }
     }
+}
