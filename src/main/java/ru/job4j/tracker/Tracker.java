@@ -11,6 +11,7 @@ public class Tracker {
         item.setId(ids++);
         items[size++] = item;
         return item;
+
     }
 
     public Item[] findAll() {
