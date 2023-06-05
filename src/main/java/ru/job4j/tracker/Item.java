@@ -8,23 +8,6 @@ public class Item {
     private String name;
     private LocalDateTime created = LocalDateTime.now();
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        Item item = (Item) o;
-        return id == item.id && Objects.equals(name, item.name) && Objects.equals(created, item.created);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, created);
-    }
-
     public Item(int id) {
         this.id = id;
     }
@@ -40,12 +23,6 @@ public class Item {
 
     public Item(String name) {
         this.name = name;
-    }
-
-    public Item(int id, String name, LocalDateTime created) {
-        this.id = id;
-        this.name = name;
-        this.created = created;
     }
 
     public LocalDateTime getCreated() {
