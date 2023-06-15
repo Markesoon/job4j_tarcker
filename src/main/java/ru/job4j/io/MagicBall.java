@@ -20,5 +20,6 @@ public class MagicBall {
         if (answer == 2) {
             System.out.println("Может быть");
             }
+
         }
     }
