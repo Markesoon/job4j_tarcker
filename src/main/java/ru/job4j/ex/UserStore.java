@@ -8,8 +8,6 @@ public class UserStore {
             if (login.equals(value.getUsername())) {
                 user = value;
                 break;
-            } else {
-                throw new UserNotFoundException("User not found");
             }
         }
         return user;
