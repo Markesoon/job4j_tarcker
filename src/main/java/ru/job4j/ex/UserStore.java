@@ -9,9 +9,9 @@ public class UserStore {
                 user = value;
                 break;
             }
-            if (value == null) {
-                throw new UserNotFoundException("Не найден в списке");
-            }
+        }
+        if (user == null) {
+            throw new UserNotFoundException("Не найден в списке");
         }
         return user;
     }
