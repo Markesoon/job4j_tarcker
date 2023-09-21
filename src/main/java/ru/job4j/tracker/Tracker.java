@@ -61,6 +61,7 @@ public class Tracker {
         boolean rsl = i != -1;
         if (rsl) {
             items.remove(i);
+
         }
         return rsl;
     }

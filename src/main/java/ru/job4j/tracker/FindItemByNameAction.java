@@ -23,6 +23,7 @@ public class FindItemByNameAction implements UserAction {
         if (items.size() > 0) {
             for (Item item : items) {
                 out.println(item);
+
             }
         } else {
             out.println("Заявки с именем: " + name + " не найдены.");

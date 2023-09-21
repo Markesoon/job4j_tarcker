@@ -14,6 +14,7 @@ public class SingleTracker {
     public static SingleTracker getInstance() {
         if (instance == null) {
             instance = new SingleTracker();
+
         }
         return instance;
     }
