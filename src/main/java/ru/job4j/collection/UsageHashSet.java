@@ -1,4 +1,4 @@
-package collection;
+package ru.job4j.collection;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -10,6 +10,8 @@ public class UsageHashSet {
         autos.add("Volvo");
         autos.add("BMW");
         autos.add("Lada");
+        autos.add("Lada");
+        autos.add("BMW");
         for (String auto : autos) {
             System.out.println(auto);
         }
