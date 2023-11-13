@@ -21,8 +21,8 @@ public class AnalyzeByMap {
             double score = 0;
             for (Subject subjects : pupil.subjects()) {
                 score += subjects.score();
-                label.add(new Label(pupil.name(), score / pupil.subjects().size()));
             }
+                label.add(new Label(pupil.name(), score / pupil.subjects().size()));
         }
         return label;
     }
