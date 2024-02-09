@@ -11,24 +11,24 @@ class FunctionCalculatorTest {
     @Test
     void whenLinearFunctionThenQuadraticResults() {
         FunctionCalculator function = new FunctionCalculator();
-        List<Double> result = function.diapason(5, 8, x -> 2 * x + 1);
-        List<Double> expected = Arrays.asList(11D, 13D, 15D);
-        assertThat(result).containsAll(expected);
-    }
-
-    @Test
-    void whenLinearFunctionThenIndicativeResults() {
-        FunctionCalculator function = new FunctionCalculator();
         List<Double> result = function.diapason(5, 8, x -> 2 * Math.pow(2, x) + 1 * x + 3);
         List<Double> expected = Arrays.asList(72D, 137D, 266D);
         assertThat(result).containsAll(expected);
     }
 
     @Test
-    void whenLinearFunctionThenLinearResults() {
+    void whenLinearFunctionThenIndicativeResults() {
         FunctionCalculator function = new FunctionCalculator();
         List<Double> result = function.diapason(5, 8, x -> Math.pow(2, x));
         List<Double> expected = Arrays.asList(32D, 64D, 128D);
+        assertThat(result).containsAll(expected);
+    }
+
+    @Test
+    void whenLinearFunctionThenLinearResults() {
+        FunctionCalculator function = new FunctionCalculator();
+        List<Double> result = function.diapason(5, 8, x -> 2 * x + 1);
+        List<Double> expected = Arrays.asList(11D, 13D, 15D);
         assertThat(result).containsAll(expected);
     }
 }
