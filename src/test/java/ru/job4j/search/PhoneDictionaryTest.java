@@ -10,6 +10,7 @@ public class PhoneDictionaryTest {
     @Test
     public void whenFindByName() {
         PhoneDictionary phones = new PhoneDictionary();
+
         phones.add(
                 new Person("Petr", "Arsentev", "534872", "Bryansk")
         );

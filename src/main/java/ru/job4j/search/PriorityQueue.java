@@ -6,6 +6,7 @@ public class PriorityQueue {
     private LinkedList<Task> tasks = new LinkedList<>();
 
     /**
+     *
      * Метод должен вставлять в нужную позицию элемент.
      * Позиция определяется по полю приоритет.
      * Для вставки использовать add(int index, E value)
